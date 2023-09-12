@@ -1,0 +1,7 @@
+com\example\page\service\impl\PricesServiceImpl.class
+com\example\page\controller\PricesController.class
+com\example\page\repository\PricesRepository.class
+com\example\page\dto\PriceDTO.class
+com\example\page\PageApplication.class
+com\example\page\service\PricesService.class
+com\example\page\entity\PriceEntity.class
