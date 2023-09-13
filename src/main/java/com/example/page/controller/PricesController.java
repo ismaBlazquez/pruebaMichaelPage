@@ -32,7 +32,7 @@ public class PricesController {
 			appDate = df.parse(applicationDate);
 			return pricesService.getPricesByDateAndProductIdAndBrandId(appDate, productId, brandId);
 		} catch (ParseException e) {
-			return new PriceDTO();
+			return null);
 		}
 	}
 	
