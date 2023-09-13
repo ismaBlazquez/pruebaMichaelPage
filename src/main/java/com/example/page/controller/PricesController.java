@@ -38,8 +38,7 @@ public class PricesController {
 	
 	@GetMapping("/getAll")
 	public @ResponseBody List<PriceDTO> getPricesByDateAndProductIdAndBrandId() {
-		List<PriceDTO> all = pricesService.getAll();	
-		return all;
+		return pricesService.getAll();
 	}
 	
 }
