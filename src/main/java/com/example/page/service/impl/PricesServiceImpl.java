@@ -43,7 +43,7 @@ public class PricesServiceImpl implements PricesService {
 	public List<PriceDTO> getAll(){
 		List<PriceDTO> listDto = new ArrayList<>();
 		List<PriceEntity> allPricesEntity = pricesRepository.findAll();
-		if (allPricesEntity != null && !allPricesEntity.isEmpty()) {
+		if (!allPricesEntity.isEmpty()) {
 			allPricesEntity.stream().forEach(p -> listDto.add(modelMapper.map(p, PriceDTO.class)));
 		}
 		return listDto;
